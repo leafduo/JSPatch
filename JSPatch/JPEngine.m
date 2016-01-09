@@ -85,7 +85,12 @@ static NSMutableDictionary *registeredStruct;
     };
     
     context[@"_OC_callI"] = ^id(JSValue *obj, NSString *selectorName, JSValue *arguments, BOOL isSuper) {
-        return callSelector(nil, selectorName, arguments, obj, isSuper);
+        @try {
+            return callSelector(nil, selectorName, arguments, obj, isSuper);
+        }
+        @catch (NSException *exception) {
+            NSLog(@"qqq");
+        }
     };
     context[@"_OC_callC"] = ^id(NSString *className, NSString *selectorName, JSValue *arguments) {
         return callSelector(className, selectorName, arguments, nil, NO);
@@ -1007,8 +1012,12 @@ static id callSelector(NSString *className, NSString *selectorName, JSValue *arg
             }
         }
     }
-    
-    [invocation invoke];
+//    @try {
+        [invocation invoke];
+//    }
+//    @catch (NSException *exception) {
+//        NSLog(@"catched!");
+//    }
     if ([_markArray count] > 0) {
         for (JPBoxing *box in _markArray) {
             void *pointer = [box unboxPointer];

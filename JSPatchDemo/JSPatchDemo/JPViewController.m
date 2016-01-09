@@ -7,6 +7,7 @@
 //
 
 #import "JPViewController.h"
+#import "JPEngine.h"
 
 @implementation JPViewController
 
@@ -21,6 +22,9 @@
 
 - (void)handleBtn:(id)sender
 {
+    NSLog(@"2222222");
+    NSException *exception = [[NSException alloc] initWithName:@"1" reason:@"2" userInfo:nil];
+    @throw exception;
 }
 
 @end

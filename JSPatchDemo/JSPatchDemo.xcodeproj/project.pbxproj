@@ -26,6 +26,7 @@
 		3F6C38EB1B4A37D600F88662 /* JPMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6C38EA1B4A37D600F88662 /* JPMemory.m */; };
 		6C9C0EE41C25A7C700FCAAC5 /* newProtocolTest.js in Resources */ = {isa = PBXBuildFile; fileRef = 6C9C0EE31C25A7C700FCAAC5 /* newProtocolTest.js */; };
 		6C9C0EE51C25A7DA00FCAAC5 /* newProtocolTest.js in Resources */ = {isa = PBXBuildFile; fileRef = 6C9C0EE31C25A7C700FCAAC5 /* newProtocolTest.js */; };
+		92FC951A1C40F7DF002AF256 /* SALExceptionExtension.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92FC95191C40F7DF002AF256 /* SALExceptionExtension.mm */; };
 		DE58B6481B7C312800F64C63 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE58B6471B7C312800F64C63 /* JavaScriptCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DE6FFEED1B4243500005EE83 /* JPInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6FFEEB1B4243500005EE83 /* JPInclude.m */; };
 		DE6FFF031B42B01C0005EE83 /* protocolTest.js in Resources */ = {isa = PBXBuildFile; fileRef = DE6FFF021B42B01C0005EE83 /* protocolTest.js */; };
@@ -93,6 +94,8 @@
 		3F6C38E91B4A37D600F88662 /* JPMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPMemory.h; sourceTree = "<group>"; };
 		3F6C38EA1B4A37D600F88662 /* JPMemory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPMemory.m; sourceTree = "<group>"; };
 		6C9C0EE31C25A7C700FCAAC5 /* newProtocolTest.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = newProtocolTest.js; sourceTree = "<group>"; };
+		92FC95181C40F7DF002AF256 /* SALExceptionExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SALExceptionExtension.h; path = UIKit/SALExceptionExtension.h; sourceTree = "<group>"; };
+		92FC95191C40F7DF002AF256 /* SALExceptionExtension.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SALExceptionExtension.mm; path = UIKit/SALExceptionExtension.mm; sourceTree = "<group>"; };
 		DE58B6471B7C312800F64C63 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		DE6FFEEA1B4243500005EE83 /* JPInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPInclude.h; sourceTree = "<group>"; };
 		DE6FFEEB1B4243500005EE83 /* JPInclude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPInclude.m; sourceTree = "<group>"; };
@@ -236,6 +239,8 @@
 		DE6FFEE71B4243500005EE83 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				92FC95181C40F7DF002AF256 /* SALExceptionExtension.h */,
+				92FC95191C40F7DF002AF256 /* SALExceptionExtension.mm */,
 				DEE3D2B81B7CD1DC00D73DF1 /* UIKit */,
 				DEE3D29E1B7CC5D200D73DF1 /* CoreGraphics */,
 				DE6FFEEA1B4243500005EE83 /* JPInclude.h */,
@@ -444,6 +449,7 @@
 			files = (
 				2D5D89211B0B8BFF009382EC /* AppDelegate.m in Sources */,
 				DEE3D2B31B7CC5D200D73DF1 /* JPCGGeometry.m in Sources */,
+				92FC951A1C40F7DF002AF256 /* SALExceptionExtension.mm in Sources */,
 				36F0DC6E1BF6CF5C0090EA4A /* mztools.c in Sources */,
 				DEE3D2C21B7CD1DC00D73DF1 /* JPUIGeometry.m in Sources */,
 				DE6FFEED1B4243500005EE83 /* JPInclude.m in Sources */,
