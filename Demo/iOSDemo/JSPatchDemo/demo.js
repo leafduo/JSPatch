@@ -5,6 +5,12 @@ defineClass('JPViewController', {
   }
 })
 
+defineClass('AppDelegate', {
+            testMethod: function() {
+            console.log('js method');
+            }
+            })
+
 defineClass('JPTableViewController : UITableViewController <UIAlertViewDelegate>', ['data'], {
   dataSource: function() {
     var data = self.data();
